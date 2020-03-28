@@ -1,0 +1,40 @@
+{
+  "name": "ghost-storage-imgur",
+  "version": "1.0.0",
+  "description": "Imgur storage adapter for Ghost",
+  "homepage": "https://github.com/ifvictr/ghost-storage-imgur#readme",
+  "bugs": {
+    "url": "https://github.com/ifvictr/ghost-storage-imgur/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifvictr/ghost-storage-imgur.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Victor Truong",
+    "email": "victor@victortruong.com",
+    "url": "https://victortruong.com"
+  },
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "yarn clean && babel ./src --out-dir ./build",
+    "clean": "rm -rf ./build && mkdir ./build",
+    "prepublish": "yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "ghost-storage-base": "^0.0.4",
+    "imgur": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-plugin-add-module-exports": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  }
+}
