@@ -1,6 +1,6 @@
 {
   "name": "ghost-storage-imgur",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Imgur storage adapter for Ghost",
   "homepage": "https://github.com/ifvictr/ghost-storage-imgur#readme",
   "bugs": {
